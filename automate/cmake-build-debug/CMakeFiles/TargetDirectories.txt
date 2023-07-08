@@ -1,0 +1,3 @@
+C:/Users/Patryk/CLionProjects/automate/cmake-build-debug/CMakeFiles/automate.dir
+C:/Users/Patryk/CLionProjects/automate/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Patryk/CLionProjects/automate/cmake-build-debug/CMakeFiles/rebuild_cache.dir
