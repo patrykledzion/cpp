@@ -3,6 +3,7 @@
 #include <iostream>
 #include <filesystem>
 #include <unistd.h>
+#include "xmlformatter.h"
 
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "EndlessLoop"
@@ -60,14 +61,18 @@ int main()
     const fs::path p = R"(D:\tmp\test)";
     const fs::path p2 = R"(D:\tmp\copy_to)";
 
-    while(true)
-    {
+    /*while(true)
+    {*/
         map(p,0);
         copy_all(p,p2);
         sleep(1);
 
-    }
+   /* }*/
 
+    std::string path_xml = "D:/tmp/xml/a.xml";
+    auto *formatter = new xmlformatter(path_xml);
+    formatter->format_file();
+    formatter->write_to_file();
 }
 #pragma clang diagnostic pop
 #pragma clang diagnostic pop
